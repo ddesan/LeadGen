@@ -1,0 +1,32 @@
+/// <reference types="node" />
+import React from 'react';
+import Router, { BaseRouter } from 'next-server/dist/lib/router/router';
+declare type SingletonRouterBase = {
+    router: Router | null;
+    readyCallbacks: Array<() => any>;
+    ready(cb: () => any): void;
+};
+export { Router };
+export declare type PublicRouterInstance = BaseRouter & Pick<Router, 'push' | 'replace' | 'reload' | 'back' | 'prefetch' | 'beforePopState'> & {
+    events: typeof Router['events'];
+};
+export declare type SingletonRouter = SingletonRouterBase & PublicRouterInstance;
+declare const _default: SingletonRouter;
+export default _default;
+export { default as withRouter } from './with-router';
+export declare function useRouter(): any;
+export declare function useRequest(): any;
+export declare const createRouter: (pathname: string, query: import("querystring").ParsedUrlQuery, as: string, __3: {
+    subscription: (data: {
+        Component: React.ComponentType<{}>;
+        props?: any;
+        err?: Error | undefined;
+        error?: any;
+    }, App?: React.ComponentClass<{}, any> | React.FunctionComponent<{}> | undefined) => void;
+    initialProps: any;
+    pageLoader: any;
+    Component: React.ComponentType<{}>;
+    App: React.ComponentType<{}>;
+    err?: Error | undefined;
+}) => Router;
+export declare function makePublicRouterInstance(router: Router): PublicRouterInstance;
