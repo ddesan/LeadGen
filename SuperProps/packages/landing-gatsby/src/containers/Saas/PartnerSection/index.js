@@ -29,15 +29,15 @@ const PartnerSection = ({
           <Box {...col} {...textArea}>
             <Heading
               {...title}
-              content="Meet our business partner who work behind the scene"
+              content="Cualquier persona puede usar LeadGen"
             />
             <Text
               {...description}
-              content="You can trust us for any kind of services and some of the world class companies have also trusted us.So have faith and keep in touch with us ."
+              content="El futuro es la automatización, por lo que queremos devolver a las personas la parte creativa de su trabajo buscando quitar el trabajo técnico."
             />
             <Box>
               <a href="#1">
-                <Button {...button} title="LEARN MORE" />
+                <Button {...button} title="ME INTERESA" />
               </a>
             </Box>
           </Box>

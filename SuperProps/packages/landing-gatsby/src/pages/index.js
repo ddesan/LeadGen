@@ -18,6 +18,7 @@ import TestimonialSection from '../containers/Saas/TestimonialSection';
 import PartnerSection from '../containers/Saas/PartnerSection';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import SEO from '../components/seo';
+import Newsletter from '../containers/SaasClassic/Newsletter';
 
 export default () => {
   return (
@@ -36,12 +37,10 @@ export default () => {
           <FeatureSection />
           <VisitorSection />
           <ServiceSection />
-          <PricingSection />
-          <TestimonialSection />
           <PartnerSection />
           <TimelineSection />
           <FaqSection />
-          <TrialSection />
+          <Newsletter />
           <Footer />
         </ContentWrapper>
       </Fragment>

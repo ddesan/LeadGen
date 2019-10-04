@@ -31,20 +31,20 @@
     {
       "id": 1,
       "icon": "flaticon-creative",
-      "title": "Powerful Features",
-      "description": "Automate time consuming tasks like organising expenses ,tracking your time and following up with clients "
+      "title": "Generación de clientes",
+      "description": "En pocos clicks y sin agencias intermediarias, crea campañas publicitarias en los principales medios digitales (Facebook, Google, Instagram y LinkedIn) enfocadas en la generación de clientes potenciales para tu negocio"
     },
     {
       "id": 2,
       "icon": "flaticon-briefing",
-      "title": "Easy Invoicing",
-      "description": "Want to surprice your clients with professional looking invoices ? Then you are some clicks behind ."
+      "title": "Gestión de clientes",
+      "description": "Los clientes generados por las campañas pasan en automático a tu tablero de gestión de clientes, donde podrás definir tu proceso/funnel comercial adecuado a tus necesidades, conslidando toda la información más relevante de tus clientes"
     },
     {
       "id": 3,
       "icon": "flaticon-flask",
-      "title": "Easy To Use",
-      "description": "Very Simple and intuitive. So you have to spend less time in paperwork and impress your customer with looks"
+      "title": "Tableros de control",
+      "description": "Visiblidad de todas las inversiones en medios, costos por canal, costos por cliente generado, son algunos datos que puedes visualizar en LeadGen"
     }
   ],
   "Footer_Data": [
@@ -149,51 +149,51 @@
     {
       "id": 1,
       "icon": "flaticon-briefing",
-      "title": "App Development",
-      "description": "We are specialized at custom Saas Application Development and special features ."
+      "title": "Sencillo de usar",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       "id": 2,
       "icon": "flaticon-trophy",
-      "title": "10 Times Award",
-      "description": "We are globally recognised for our services and won a lot of prices around the world ."
+      "title": "Ahorro en costos",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       "id": 3,
       "icon": "flaticon-atom",
-      "title": "Cloud Stroage",
-      "description": "LiteSpeed Web Server known for its high performance and low resource consumption."
+      "title": "Sin dependencias",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       "id": 4,
       "icon": "flaticon-ruler",
-      "title": "Client Satisfaction",
-      "description": "Client Satisfaction is our first priority and We are best at it .Keep In Touch."
+      "title": "Inversión 100% en medios",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       "id": 5,
       "icon": "flaticon-creative",
-      "title": "UX Planning",
-      "description": "We provide the best UI/UX Design by following the latest trends of the market  ."
+      "title": "Automatización",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       "id": 6,
       "icon": "flaticon-conversation",
-      "title": "Customer Support",
-      "description": "A Dedicated support team is always ready to provide best support to our customers."
+      "title": "Seguridad",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ],
   "Timeline": [
     {
-      "title": "Wireframing for project",
+      "title": "Crear cuenta",
       "description": "We respect our customer opinions and deals with them with perfect wireframing."
     },
     {
-      "title": "UI/UX for project",
+      "title": "Elaboración de materiales",
       "description": "We provide the best UI/UX Design by following the latest trends of the market ."
     },
     {
-      "title": "Negotiation about project",
+      "title": "Recibir clientes y vender",
       "description": "After the negotiation is done , We start to build the project with latest technology ."
     }
   ],

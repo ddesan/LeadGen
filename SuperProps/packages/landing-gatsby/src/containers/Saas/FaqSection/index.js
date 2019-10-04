@@ -79,11 +79,6 @@ const FaqSection = ({
               ))}
             </Fragment>
           </Accordion>
-          <Box {...buttonWrapper}>
-            <a href="#1">
-              <Button {...button} />
-            </a>
-          </Box>
         </Box>
       </Container>
     </FaqSectionWrapper>
@@ -109,7 +104,7 @@ FaqSection.defaultProps = {
   },
   // sub section default style
   sectionSubTitle: {
-    content: 'FREQUENTLY ASKED QUESTIONS',
+    content: 'PREGUNTAS FRECUENTES',
     as: 'span',
     display: 'block',
     textAlign: 'center',
@@ -121,7 +116,7 @@ FaqSection.defaultProps = {
   },
   // section title default style
   sectionTitle: {
-    content: 'Want to ask something about us ?',
+    content: '¿Tienes más dudas sobre nosotros?',
     textAlign: 'center',
     fontSize: ['20px', '24px'],
     fontWeight: '400',
