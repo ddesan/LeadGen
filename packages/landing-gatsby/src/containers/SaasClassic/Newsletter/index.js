@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import Box from 'reusecore/src/elements/Box';
 import Text from 'reusecore/src/elements/Text';
@@ -9,6 +9,11 @@ import Container from 'common/src/components/UI/Container';
 
 import NewsletterWrapper, { ContactFormWrapper } from './newsletter.style';
 
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");}
+
 const Newsletter = ({
   sectionWrapper,
   textArea,
@@ -17,6 +22,14 @@ const Newsletter = ({
   title,
   description,
 }) => {
+  const [formState, setFormState] = useState({
+    email:""
+  });
+  const handelFormChange = (nombre, valor) => {
+    let newState = {...formState}
+    newState[nombre] = valor;
+    setFormState(newState); 
+  }
   return (
     <Box {...sectionWrapper} as="section">
       <Container>
@@ -32,7 +45,17 @@ const Newsletter = ({
             <ContactFormWrapper>
               <form name="contact" method="post" data-netifly="true" data-netifly-honeypot="bot-field" onSubmit={(e) => {
                 e.preventDefault();
-                console.log("Envio de formulario");
+                const form=e.target;
+                fetch("/", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                  body: encode({"form-name": form.getAttribute("name"),
+                  ...formState,
+                    })
+                  })
+                  .then(() => console.log("Envio de formulario"))
+                  .catch(error => console.log(error));
+                ;
               }}
               style={{
                 width: "100%",
@@ -53,6 +76,7 @@ const Newsletter = ({
                 isMaterial={true}
                 className="email_input"
                 arial-label="email"
+                onChange={(valor) => handelFormChange("email",valor)}
               />
               <Button {...buttonStyle} title="ME INTERESA" type="submit"/>
               </form>
