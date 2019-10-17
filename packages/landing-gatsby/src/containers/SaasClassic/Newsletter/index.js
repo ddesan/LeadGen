@@ -43,8 +43,7 @@ const Newsletter = ({
           </Box>
           <Box {...buttonArea}>
             <ContactFormWrapper>
-              <form name="contact" method="post" data-netifly="true" data-netifly-honeypot="bot-field" onSubmit={(e) => {
-                e.preventDefault();
+              <form name="contact" onSubmit={(e) => {
                 const form=e.target;
                 fetch("/", {
                   method: "POST",
@@ -55,19 +54,12 @@ const Newsletter = ({
                   })
                   .then(() => console.log("Envio de formulario"))
                   .catch(error => console.log(error));
-                ;
+                  e.preventDefault();
               }}
               style={{
                 width: "100%",
                 display: "flex"
               }}>
-                <input type="hidden" name="form-name" value="contact"/>
-                <p hidden>
-                  <label>
-                    Don’t fill this out:{" "}
-                    <input name="bot-field"/>
-                  </label>
-                </p> 
               <Input 
                 name="email"
                 inputType="email"
