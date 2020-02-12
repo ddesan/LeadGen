@@ -37,8 +37,8 @@ const ServiceSection = ({
     <ServiceSectionWrapper id="feature_section">
       <Container>
         <Box {...sectionHeader}>
-          <Text content="OTROS BENEFICIOS" {...sectionSubTitle} />
-          <Heading content="¿Porqué LeadGen es su mejor aliado?" {...sectionTitle} />
+          <Text content="Descubre todos los beneficios que te otorga" {...sectionSubTitle} />
+          <Heading content="LEADGEN TU MEJOR ALIADO" {...sectionTitle} />
         </Box>
         <Box className="row" {...row}>
           {Data.saasJson.Service.map((feature, index) => (

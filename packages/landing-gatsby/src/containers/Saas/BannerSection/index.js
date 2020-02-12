@@ -28,10 +28,10 @@ const BannerSection = ({
 }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="ME INTERESA" {...btnStyle} />
+      <Button title="Reservar mi lugar" {...btnStyle} />
       <Button
         className="outlined"
-        title="CONOCER MÁS"
+        title="¡Comienza gratis!"
         variant="outlined"
         {...outlineBtnStyle}
       />
@@ -45,13 +45,13 @@ const BannerSection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="Genera y gestiona tus clientes en un sólo lugar."
+                  content="Consigue clientes. Más rápido. Y vende más fácil."
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Comienza a generar clientes en menos de XX tiempo, sin intermediarios y sin necesidad de ser experto en medios digitales."
+                  content="La herramienta que necesitas para vender sin ser experto en medios digitales."
                   {...description}
                 />
               }

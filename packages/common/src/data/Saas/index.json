@@ -31,20 +31,32 @@
     {
       "id": 1,
       "icon": "flaticon-creative",
-      "title": "Generación de clientes",
-      "description": "En pocos clicks y sin agencias intermediarias, crea campañas publicitarias en los principales medios digitales (Facebook, Google, Instagram y LinkedIn) enfocadas en la generación de clientes potenciales para tu negocio"
+      "title": "TE AYUDAMOS A CRECER",
+      "description": "Sabemos lo complejo que es buscar, dar seguimiento y cerrar ventas con clientes. Por eso simplificamos el proceso de ventas de inicio a fin."
     },
     {
       "id": 2,
       "icon": "flaticon-briefing",
-      "title": "Gestión de clientes",
-      "description": "Los clientes generados por las campañas pasan en automático a tu tablero de gestión de clientes, donde podrás definir tu proceso/funnel comercial adecuado a tus necesidades, conslidando toda la información más relevante de tus clientes"
+      "title": "Atrae clientes",
+      "description": "Rápido y sin intermediarios, crea campañas en pocos clics para los principales medios digitales, sin importar tu nivel de conocimiento digital.  (Facebook, Google, Instagram, LinkedIn)"
     },
     {
       "id": 3,
       "icon": "flaticon-flask",
-      "title": "Tableros de control",
-      "description": "Visiblidad de todas las inversiones en medios, costos por canal, costos por cliente generado, son algunos datos que puedes visualizar en LeadGen"
+      "title": "Crea campañas tu mismo",
+      "description": "Te ayudamos con lo necesario como artes, segmentos y recomendación de inversión."
+    },
+    {
+      "id": 4,
+      "icon": "flaticon-flask",
+      "title": "Da seguimiento",
+      "description": "Podrás dar ver a las personas que te contacten por medio de las campañas en un tablero fácil de usar, donde podrás definir tu proceso de venta paso a paso."
+    },
+    {
+      "id": 5,
+      "icon": "flaticon-flask",
+      "title": "Análisis de gastos claro",
+      "description": "Ve las inversiones de tus campañas y por canal, incluyendo cuánto costó generar un cliente."
     }
   ],
   "Footer_Data": [
@@ -149,52 +161,52 @@
     {
       "id": 1,
       "icon": "flaticon-briefing",
-      "title": "Sencillo de usar",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "title": "FÁCIL DE USAR",
+      "description": "En pocos pasos podrás conectar con clientes potenciales para tu negocio."
     },
     {
       "id": 2,
       "icon": "flaticon-trophy",
-      "title": "Ahorro en costos",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "title": "Ahorro",
+      "description": "Nuestra meta es que crezcas, así que cuidaremos tu tiempo y tu dinero."
     },
     {
       "id": 3,
       "icon": "flaticon-atom",
-      "title": "Sin dependencias",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "title": "Sin intermediarios",
+      "description": "Ni dependencia con agencias. Tu mismo podrás manejar y comprender todo lo que sucede con tus campañas y tus clientes."
     },
     {
       "id": 4,
       "icon": "flaticon-ruler",
       "title": "Inversión 100% en medios",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "Sin fee’s extras, no importa la cantidad que decidas invertir en tus campañas."
     },
     {
       "id": 5,
       "icon": "flaticon-creative",
       "title": "Automatización",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "Aprovechamos la tecnología para lo que debemos usarla, hacer nuestra vida más fácil. Así que prepárate para tener marketing y ventas sin preocupaciones."
     },
     {
       "id": 6,
       "icon": "flaticon-conversation",
       "title": "Seguridad",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "Tu información y la de tus clientes protegida. Nadie tendrá acceso a la base de datos de clientes que hayas generado, ¡adiós robo de clientes potenciales!"
     }
   ],
   "Timeline": [
     {
-      "title": "Crear cuenta",
-      "description": "We respect our customer opinions and deals with them with perfect wireframing."
+      "title": "Crea tu cuenta",
+      "description": "Buscamos conocerte para ayudarte a ir por el camino correcto en tu estrategia de marketing y funnel de ventas."
     },
     {
-      "title": "Elaboración de materiales",
-      "description": "We provide the best UI/UX Design by following the latest trends of the market ."
+      "title": "Arma campañas",
+      "description": "Te apoyamos con stock de imágenes, ejemplos de mensajes atractivos y a visualizar como se verá tu campaña en distintos medios."
     },
     {
-      "title": "Recibir clientes y vender",
-      "description": "After the negotiation is done , We start to build the project with latest technology ."
+      "title": "Recibe clientes y vende",
+      "description": "Da seguimiento a\n todos tus clientes desde que llegan así como cada contacto que "
     }
   ],
   "Testimonial": [

@@ -52,10 +52,10 @@ const TimelineSection = ({
     <Box {...sectionWrapper}>
       <Container>
         <Box {...sectionHeader}>
-          <Text {...sectionSubTitle} content="¿CÓMO FUNCIONA?" />
+          <Text {...sectionSubTitle} content="FÁCIL DE USAR" />
           <Heading
             {...sectionTitle}
-            content="En X simples pasos vas a poder generar clientes para tu negocio"
+            content="En pocos pasos podrás conectar con clientes potenciales para tu negocio."
           />
         </Box>
         <Box {...row}>
@@ -106,7 +106,7 @@ const TimelineSection = ({
         </Box>
         <Box {...buttonWrapper}>
           <a href="#1">
-            <Button {...button} title="ME INTERESA" />
+            <Button {...button} title="Reservar mi lugar" />
           </a>
         </Box>
       </Container>

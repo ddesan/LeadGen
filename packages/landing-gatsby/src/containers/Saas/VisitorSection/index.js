@@ -41,19 +41,19 @@ const VisitorSection = ({
           <FeatureBlock
             title={
               <Heading
-                content="La variable más importante para LeadGen es el tiempo"
+                content="EL TIEMPO ES NUESTRO ALIADO"
                 {...title}
               />
             }
             description={
               <Text
-                content="El tiempo promedio en generar clientes en medios digitales actualmente es de 3 meses, desde que nace la idea hasta que se genera el primer cliente. Es por ello que encontramos la forma de reducirlo a 2 semanas."
+                content="Actualmente el tiempo promedio para generar clientes en medio digitales es de 3 meses. LeadGen lo reduce a 2 semanas."
                 {...description}
               />
             }
             button={
               <a href="#1">
-                <Button title="¿CÓMO FUNCIONA?" {...btnStyle} />
+                <Button title="Reservar mi lugar" {...btnStyle} />
               </a>
             }
           />
