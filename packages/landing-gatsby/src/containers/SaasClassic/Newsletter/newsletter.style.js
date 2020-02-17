@@ -12,7 +12,8 @@ const NewsletterWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: -105px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   @media (max-width: 1220px) {
     padding: 35px 40px;
   }
@@ -30,6 +31,7 @@ export const ContactFormWrapper = styled.div`
   align-items: flex-end;
   width: 470px;
   max-width: 100%;
+  
   margin-left: auto;
   margin-right: auto;
   @media (max-width: 1220px) {

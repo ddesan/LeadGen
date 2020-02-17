@@ -8,6 +8,7 @@ import Input from 'reusecore/src/elements/Input';
 import Container from 'common/src/components/UI/Container';
 
 import NewsletterWrapper, { ContactFormWrapper } from './newsletter.style';
+import MailChimp from "../../../services/MailChimp";
 
 function encode(data) {
   return Object.keys(data)
@@ -22,56 +23,47 @@ const Newsletter = ({
   title,
   description,
 }) => {
+
   const [formState, setFormState] = useState({
-    email:""
+    email: ""
   });
-  const handelFormChange = (nombre, valor) => {
-    let newState = {...formState}
-    newState[nombre] = valor;
-    setFormState(newState); 
+
+  const handleSubmit = async () => {
+      try {
+          await MailChimp.submitEmailForm(formState)
+      } catch(err) {
+          console.error("Failed to submit form")
+      }
   }
+
+  const handleFormChange = (name, value) => {
+      setFormState({name: value}); 
+  }
+
   return (
     <Box {...sectionWrapper} as="section">
       <Container>
         <NewsletterWrapper>
           <Box {...textArea}>
-            <Heading content="Subscribe our newsletter" {...title} />
+            <Heading content="Reserva tu lugar" {...title} />
             <Text
-              content="Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt labore dolore"
+              content="Registra tu correo y entérate de cuando puedes empezar a usar tu cuenta."
               {...description}
             />
           </Box>
           <Box {...buttonArea}>
             <ContactFormWrapper>
-              <form name="contact" onSubmit={(e) => {
-                const form=e.target;
-                fetch("/", {
-                  method: "POST",
-                  headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                  body: encode({"form-name": form.getAttribute("name"),
-                  ...formState,
-                    })
-                  })
-                  .then(() => console.log("Envio de formulario"))
-                  .catch(error => console.log(error));
-                  e.preventDefault();
-              }}
-              style={{
-                width: "100%",
-                display: "flex"
-              }}>
-              <Input 
+              <Input
                 name="email"
                 inputType="email"
-                label="Email address"
+                label="Correo electronico"
                 iconPosition="right"
                 isMaterial={true}
                 className="email_input"
                 arial-label="email"
-                onChange={(valor) => handelFormChange("email",valor)}
+                onChange={(valor) => handleFormChange("email",valor)}
               />
-              <Button {...buttonStyle} title="ME INTERESA" type="submit"/>
-              </form>
+              <Button {...buttonStyle} title="Reservar mi lugar" onClick={handleSubmit}/>
             </ContactFormWrapper>
           </Box>
         </NewsletterWrapper>
