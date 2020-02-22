@@ -63,5 +63,8 @@
       "prettier --trailing-comma es5 --single-quote --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "react-spinners": "^0.8.0"
   }
 }

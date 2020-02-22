@@ -26,6 +26,13 @@ const NewsletterWrapper = styled.div`
   }
 `;
 
+export const FormLoader = styled.div`
+    div.loader-container:first-child {
+        width: inherit;
+        height: inherit;
+    }
+`;
+
 export const ContactFormWrapper = styled.div`
   display: flex;
   align-items: flex-end;

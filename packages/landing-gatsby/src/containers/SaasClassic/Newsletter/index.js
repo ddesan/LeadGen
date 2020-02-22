@@ -7,8 +7,10 @@ import Button from 'reusecore/src/elements/Button';
 import Input from 'reusecore/src/elements/Input';
 import Container from 'common/src/components/UI/Container';
 
-import NewsletterWrapper, {ContactFormWrapper} from './newsletter.style';
+import NewsletterWrapper, {ContactFormWrapper, FormLoader} from './newsletter.style';
 import MailChimp from "../../../services/MailChimp";
+
+import {MoonLoader} from "react-spinners";
 
 function encode(data) {
     return Object.keys(data)
@@ -29,12 +31,23 @@ const Newsletter = ({
         email: ""
     });
 
+    const [submitting, setSubmitting] = useState(false)
+    const [showSubmitSuccess, setShowSubmitSuccess] = useState(false)
+
     const handleSubmit = async () => {
+        setSubmitting(true)
+        let success = true
         try {
-            await MailChimp.submitEmailForm(formState)
+            const response = await MailChimp.submitEmailForm(formState)
+            if (response.status !== 201) {
+                success = false
+            }
         } catch (err) {
-            console.error("Failed to submit form")
+            console.error("Failed to submit form", err)
+            success = false
         }
+        setSubmitting(false)
+        setShowSubmitSuccess(success)
     }
 
     const handleFormChange = (name, value) => {
@@ -42,6 +55,14 @@ const Newsletter = ({
         update[name] = value
         setFormState(update)
     }
+
+    const buttonSuccessState = showSubmitSuccess ?
+        <Button {...buttonStyle} title="Reservar mi lugar"/> :
+        <Button {...buttonStyle} title="¡Listo! ya estas registrado."/>
+
+    const submitButton = submitting ?
+        <FormLoader> <div className="loader-container"><MoonLoader size={30}/></div></FormLoader> :
+        buttonSuccessState
 
     return (
         <Box {...sectionWrapper} as="section">
@@ -66,7 +87,7 @@ const Newsletter = ({
                                 arial-label="email"
                                 onChange={(valor) => handleFormChange("email", valor)}
                             />
-                            <Button {...buttonStyle} title="Reservar mi lugar" onClick={handleSubmit}/>
+                            {submitButton}
                         </ContactFormWrapper>
                     </Box>
                 </NewsletterWrapper>
