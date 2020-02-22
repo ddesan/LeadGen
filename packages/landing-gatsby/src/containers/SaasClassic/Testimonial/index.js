@@ -64,7 +64,7 @@ const TestimonialSection = ({
     <Box {...sectionWrapper} as="section" id="testimonial_section">
       <Container>
         <Box {...secTitleWrapper}>
-          <Text {...secText} content="fTESTIMONIAL" />
+          <Text {...secText} content="TESTIMONIAL" />
           <Heading
             {...secHeading}
             content="Meet Client Satisfaction by using product"
