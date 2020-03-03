@@ -12,7 +12,6 @@ import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
 import VisitorSectionWrapper, { SectionObject } from './visitor.style';
 
-import ImageOne from 'common/src/assets/image/saas/saasvisitor1.png';
 import ImageBg from 'common/src/assets/image/saas/visitor_bg.png';
 
 const VisitorSection = ({
@@ -22,6 +21,7 @@ const VisitorSection = ({
   imageWrapper,
   btnStyle,
 }) => {
+  const ImageOne = 'https://static-assets-leadgen-landing.s3.amazonaws.com/el-tiempo-es-nuestro-aliado.jpg';
   return (
     <VisitorSectionWrapper id="visitorSection">
       <SectionObject>
