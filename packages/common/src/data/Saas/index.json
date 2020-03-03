@@ -206,7 +206,7 @@
     },
     {
       "title": "Recibe clientes y vende",
-      "description": "Da seguimiento a\n todos tus clientes desde que llegan así como cada contacto que "
+      "description": "Da seguimiento a todos tus clientes desde que llegan hasta que cierras una venta,  y mantente en contacto con ellos."
     }
   ],
   "Testimonial": [
@@ -229,28 +229,18 @@
   ],
   "MENU_ITEMS": [
     {
-      "label": "Home",
+      "label": "Inicio",
       "path": "#banner_section",
       "offset": "70"
     },
     {
-      "label": "Service",
+      "label": "Servicio",
       "path": "#service_section",
       "offset": "70"
     },
     {
-      "label": "Feature",
+      "label": "Funciones",
       "path": "#feature_section",
-      "offset": "70"
-    },
-    {
-      "label": "Pricing",
-      "path": "#pricing_section",
-      "offset": "70"
-    },
-    {
-      "label": "Testimonial",
-      "path": "#testimonial_section",
       "offset": "70"
     },
     {
