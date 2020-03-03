@@ -19,7 +19,6 @@ import {
   Hidden,
 } from './timeline.style';
 
-import Illustration from 'common/src/assets/image/saas/illustration.png';
 
 const TimelineSection = ({
   sectionWrapper,
@@ -47,6 +46,8 @@ const TimelineSection = ({
       }
     }
   `);
+
+  const Illustration = 'https://static-assets-leadgen-landing.s3.amazonaws.com/en-pocos-pasos.jpg'
 
   return (
     <Box {...sectionWrapper}>
