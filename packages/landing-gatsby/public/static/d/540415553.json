@@ -1,0 +1,1 @@
+{"data":{"charityJson":{"paymentPolicy":[{"id":1,"title":"One Time","text":"One Time donation given","value":"oneTime"},{"id":2,"title":"Ongoing","text":"Everymonth donation given","value":"ongoing"}],"currencyOptions":[{"id":1,"title":"$ USD","value":"usd"},{"id":2,"title":"£ GBP","value":"gbp"},{"id":3,"title":"¥ CNY","value":"cny"}]}}}
