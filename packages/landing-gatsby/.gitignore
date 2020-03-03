@@ -1,5 +1,7 @@
 .idea/
 
+public/
+
 # Logs
 logs
 *.log
