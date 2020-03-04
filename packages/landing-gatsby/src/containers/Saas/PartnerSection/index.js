@@ -8,7 +8,6 @@ import Image from 'reusecore/src/elements/Image';
 import Container from 'common/src/components/UI/Container';
 
 import PartnerSectionWrapper from './partner.style';
-import Partner from 'common/src/assets/image/saas/partner.png';
 
 const PartnerSection = ({
   row,
@@ -19,6 +18,7 @@ const PartnerSection = ({
   textArea,
   imageArea,
 }) => {
+  const Partner = 'https://static-assets-leadgen-landing.s3.amazonaws.com/todos-pueden.jpg'
   return (
     <PartnerSectionWrapper>
       <Container>

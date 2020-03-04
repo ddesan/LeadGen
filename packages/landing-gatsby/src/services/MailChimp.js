@@ -1,5 +1,5 @@
-//const MAILCHIMP_URL = `https://r9gewflsa6.execute-api.us-east-1.amazonaws.com/dev`
-const MAILCHIMP_URL = `http://localhost:3000/dev`
+const MAILCHIMP_URL = `https://r9gewflsa6.execute-api.us-east-1.amazonaws.com/dev`
+//const MAILCHIMP_URL = `http://localhost:3000/dev`
 
 class MailChimp {
 
