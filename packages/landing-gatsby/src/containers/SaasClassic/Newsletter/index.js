@@ -57,8 +57,8 @@ const Newsletter = ({
     }
 
     const buttonSuccessState = showSubmitSuccess ?
-        <Button {...buttonStyle} title="Reservar mi lugar"/> :
-        <Button {...buttonStyle} title="¡Listo! ya estas registrado."/>
+        <Button {...buttonStyle} title="¡Listo! ya estas registrado." onClick={handleSubmit}/>:
+        <Button {...buttonStyle} title="Reserva mi lugar" onClick={handleSubmit}/>
 
     const submitButton = submitting ?
         <FormLoader> <div className="loader-container"><MoonLoader size={30}/></div></FormLoader> :
