@@ -52,7 +52,7 @@ const VisitorSection = ({
               />
             }
             button={
-              <a href="#1">
+              <a href="#newsletter_section">
                 <Button title="Reservar mi lugar" {...btnStyle} />
               </a>
             }

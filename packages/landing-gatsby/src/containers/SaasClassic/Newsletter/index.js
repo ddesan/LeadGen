@@ -65,7 +65,7 @@ const Newsletter = ({
         buttonSuccessState
 
     return (
-        <Box {...sectionWrapper} as="section">
+        <Box {...sectionWrapper} as="section" id="newsletter_section">
             <Container>
                 <NewsletterWrapper>
                     <Box {...textArea}>

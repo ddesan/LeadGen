@@ -50,7 +50,7 @@ const TimelineSection = ({
   const Illustration = 'https://static-assets-leadgen-landing.s3.amazonaws.com/en-pocos-pasos.jpg'
 
   return (
-    <Box {...sectionWrapper}>
+    <Box {...sectionWrapper} id={"timeline_section"}>
       <Container>
         <Box {...sectionHeader}>
           <Text {...sectionSubTitle} content="FÁCIL DE USAR" />
@@ -106,7 +106,7 @@ const TimelineSection = ({
           </Box>
         </Box>
         <Box {...buttonWrapper}>
-          <a href="#1">
+          <a href="#newsletter_section">
             <Button {...button} title="Reservar mi lugar" />
           </a>
         </Box>

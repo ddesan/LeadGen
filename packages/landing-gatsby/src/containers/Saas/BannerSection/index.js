@@ -15,6 +15,7 @@ import BannerWrapper, {
 
 import BannerObject1 from 'common/src/assets/image/saas/banner/bannerObject1.png';
 import BannerObject2 from 'common/src/assets/image/saas/banner/bannerObject2.png';
+import ScrollSpyMenu from "common/src/components/ScrollSpyMenu";
 
 const BannerSection = ({
   row,
@@ -28,13 +29,17 @@ const BannerSection = ({
 }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="Reservar mi lugar" {...btnStyle} />
-      <Button
-        className="outlined"
-        title="¡Comienza gratis!"
-        variant="outlined"
-        {...outlineBtnStyle}
-      />
+      <a href="#newsletter_section">
+        <Button title="Reservar mi lugar" {...btnStyle}/>
+      </a>
+      <a href="#newsletter_section">
+        <Button
+          className="outlined"
+          title="¡Comienza gratis!"
+          variant="outlined"
+          {...outlineBtnStyle}
+        />
+      </a>
     </Fragment>
   );
   return (
