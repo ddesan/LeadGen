@@ -106,7 +106,7 @@ const TimelineSection = ({
           </Box>
         </Box>
         <Box {...buttonWrapper}>
-          <a href="#1">
+          <a href="#news_letter_section">
             <Button {...button} title="Reservar mi lugar" />
           </a>
         </Box>

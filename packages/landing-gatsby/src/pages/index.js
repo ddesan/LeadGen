@@ -24,7 +24,7 @@ export default () => {
   return (
     <ThemeProvider theme={saasTheme}>
       <Fragment>
-        <SEO title="Saas | A react next landing page" />
+        <SEO title="Nuuktal | Genera clientes" />
         <ResetCSS />
         <GlobalStyle />
         <ContentWrapper>

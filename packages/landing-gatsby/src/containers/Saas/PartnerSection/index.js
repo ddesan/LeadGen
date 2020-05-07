@@ -36,7 +36,7 @@ const PartnerSection = ({
               content="Dejamos la parte técnica del trabajo a la tecnología, para que tu puedas seguir siendo creativo y continúes creciendo tu negocio."
             />
             <Box>
-              <a href="#1">
+              <a href="#news_letter_section">
                 <Button {...button} title="Reservar mi lugar" />
               </a>
             </Box>

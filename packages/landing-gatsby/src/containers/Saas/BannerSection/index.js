@@ -1,62 +1,58 @@
-import React, { Fragment } from 'react';
+import React, {Fragment} from 'react';
 import PropTypes from 'prop-types';
 import Box from 'reusecore/src/elements/Box';
 import Text from 'reusecore/src/elements/Text';
-import Image from 'reusecore/src/elements/Image';
 import Heading from 'reusecore/src/elements/Heading';
 import Button from 'reusecore/src/elements/Button';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
 import Particles from '../Particle';
-import BannerWrapper, {
-  DiscountLabel,
-  BannerObject,
-} from './bannerSection.style';
-
-import BannerObject1 from 'common/src/assets/image/saas/banner/bannerObject1.png';
-import BannerObject2 from 'common/src/assets/image/saas/banner/bannerObject2.png';
+import BannerWrapper, {} from './bannerSection.style';
 
 const BannerSection = ({
-  row,
-  col,
-  title,
-  btnStyle,
-  description,
-  discountText,
-  discountAmount,
-  outlineBtnStyle,
-}) => {
+                         row,
+                         title,
+                         btnStyle,
+                         description,
+                         outlineBtnStyle,
+                       }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="Reservar mi lugar" {...btnStyle} />
+
+      <Button title="Reservar mi lugar" {...btnStyle} onClick={() => {
+        window.location.hash = "news_letter_section"
+      }}/>
+
       <Button
         className="outlined"
         title="¡Comienza gratis!"
         variant="outlined"
+        onClick={() => {window.location.hash = "news_letter_section"}}
         {...outlineBtnStyle}
       />
+
     </Fragment>
   );
   return (
     <BannerWrapper id="banner_section">
-      <Particles />
+      <Particles/>
       <Container>
         <Box className="row" {...row}>
-            <FeatureBlock
-              title={
-                <Heading
-                  content="Consigue clientes. Más rápido. Y vende más fácil."
-                  {...title}
-                />
-              }
-              description={
-                <Text
-                  content="La herramienta que necesitas para vender sin ser experto en medios digitales."
-                  {...description}
-                />
-              }
-              button={<ButtonGroup />}
-            />
+          <FeatureBlock
+            title={
+              <Heading
+                content="Consigue clientes. Más rápido. Y vende más fácil."
+                {...title}
+              />
+            }
+            description={
+              <Text
+                content="La herramienta que necesitas para vender sin ser experto en medios digitales."
+                {...description}
+              />
+            }
+            button={<ButtonGroup/>}
+          />
         </Box>
       </Container>
     </BannerWrapper>
@@ -110,7 +106,7 @@ BannerSection.defaultProps = {
     minWidth: '156px',
     fontSize: '14px',
     fontWeight: '500',
-    color: '#5167db',
+    color: '#00de6c',
     ml: '18px',
   },
   discountAmount: {

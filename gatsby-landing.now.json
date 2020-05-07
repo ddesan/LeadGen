@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "gatsby-landing",
+  "name": "nuuktal-landing",
   "builds": [
     {
       "src": "packages/landing-gatsby/package.json",
