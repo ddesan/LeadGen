@@ -33,12 +33,16 @@ export const FormLoader = styled.div`
     }
 `;
 
+export const ContactFormInputs = styled.div`
+  display: flex;
+  flex-direction:column;
+`
+
 export const ContactFormWrapper = styled.div`
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   width: 470px;
   max-width: 100%;
-  
   margin-left: auto;
   margin-right: auto;
   @media (max-width: 1220px) {
@@ -87,7 +91,7 @@ export const ContactFormWrapper = styled.div`
       font-size: 16px;
       font-weight: 400;
       color: #fff;
-      padding: 10px 15px;
+      padding: 10px 0;
       border-color: #dadada;
       @media (max-width: 575px) {
         height: 48px;
@@ -98,7 +102,6 @@ export const ContactFormWrapper = styled.div`
       font-size: 17px;
       color: #fff;
       font-weight: 400;
-      padding-left: 10px;
       top: 5px;
       pointer-events: none;
     }

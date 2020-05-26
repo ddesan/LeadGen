@@ -7,7 +7,7 @@ import Button from 'reusecore/src/elements/Button';
 import Input from 'reusecore/src/elements/Input';
 import Container from 'common/src/components/UI/Container';
 
-import NewsletterWrapper, {ContactFormWrapper, FormLoader} from './newsletter.style';
+import NewsletterWrapper, {ContactFormInputs, ContactFormWrapper, FormLoader} from './newsletter.style';
 import MailChimp from "../../../services/MailChimp";
 
 import {MoonLoader} from "react-spinners";
@@ -51,7 +51,7 @@ const Newsletter = ({
     }
 
     const handleFormChange = (name, value) => {
-        const update = {}
+        const update = {...formState}
         update[name] = value
         setFormState(update)
     }
@@ -77,17 +77,57 @@ const Newsletter = ({
                     </Box>
                     <Box {...buttonArea}>
                         <ContactFormWrapper>
+                          <ContactFormInputs>
                             <Input
-                                name="email"
-                                inputType="email"
-                                label="Correo electronico"
-                                iconPosition="right"
-                                isMaterial={true}
-                                className="email_input"
-                                arial-label="email"
-                                onChange={(valor) => handleFormChange("email", valor)}
+                              name="email"
+                              inputType="email"
+                              label="Correo electronico"
+                              iconPosition="right"
+                              isMaterial={true}
+                              className="email_input"
+                              arial-label="email"
+                              onChange={(valor) => handleFormChange("email", valor)}
                             />
+                            <Input
+                              className="email_input"
+                              name="name"
+                              inputType="text"
+                              label="Tu nombre"
+                              iconPosition="right"
+                              isMaterial={true}
+                              onChange={(valor) => handleFormChange("name", valor)}
+                            />
+                            <Input
+                              className="email_input"
+                              name="merchant"
+                              inputType="text"
+                              label="Nombre de tu empresa"
+                              iconPosition="right"
+                              isMaterial={true}
+                              onChange={(valor) => handleFormChange("merchant", valor)}
+                            />
+                            <Input
+                              className="email_input"
+                              name="phone"
+                              inputType="text"
+                              label="Teléfono"
+                              iconPosition="right"
+                              isMaterial={true}
+                              onChange={(valor) => handleFormChange("phone", valor)}
+                            />
+                            <Input
+                              className="email_input"
+                              name="industry"
+                              inputType="text"
+                              label="Industria"
+                              iconPosition="right"
+                              isMaterial={true}
+                              onChange={(valor) => handleFormChange("industry", valor)}
+                            />
+                          </ContactFormInputs>
+                          <div>
                             {submitButton}
+                          </div>
                         </ContactFormWrapper>
                     </Box>
                 </NewsletterWrapper>

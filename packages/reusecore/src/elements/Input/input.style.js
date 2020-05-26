@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { themeGet } from 'styled-system';
 
 const InputField = styled.div`
+  margin-bottom: 25px;
   position: relative;
 
   /* Input field wrapper */
@@ -67,7 +68,6 @@ const InputField = styled.div`
   /* Input and textarea default style */
   textarea,
   input {
-    font-size: 16px;
     padding: 11px;
     display: block;
     width: 100%;
