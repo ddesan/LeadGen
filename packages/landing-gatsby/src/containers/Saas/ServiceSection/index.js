@@ -34,11 +34,11 @@ const ServiceSection = ({
   `);
 
   return (
-    <ServiceSectionWrapper id="feature_section">
+    <ServiceSectionWrapper id="feat ure_section">
       <Container>
         <Box {...sectionHeader}>
-          <Text content="Descubre todos los beneficios que te otorga" {...sectionSubTitle} />
-          <Heading content="LEADGEN TU MEJOR ALIADO" {...sectionTitle} />
+          <Text content="BENEFICIOS" {...sectionSubTitle} />
+          <Heading content="NUUKTAL TU MEJOR ALIADO" {...sectionTitle} />
         </Box>
         <Box className="row" {...row}>
           {Data.saasJson.Service.map((feature, index) => (

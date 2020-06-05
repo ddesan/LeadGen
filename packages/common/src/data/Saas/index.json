@@ -31,32 +31,20 @@
     {
       "id": 1,
       "icon": "flaticon-creative",
-      "title": "TE AYUDAMOS A CRECER",
+      "title": "Crea tus campañas",
       "description": "Sabemos lo complejo que es buscar, dar seguimiento y cerrar ventas con clientes. Por eso simplificamos el proceso de ventas de inicio a fin."
     },
     {
       "id": 2,
       "icon": "flaticon-briefing",
-      "title": "Atrae clientes",
+      "title": "Genera clientes",
       "description": "Rápido y sin intermediarios, crea campañas en pocos clics para los principales medios digitales, sin importar tu nivel de conocimiento digital.  (Facebook, Google, Instagram, LinkedIn)"
     },
     {
       "id": 3,
       "icon": "flaticon-flask",
-      "title": "Crea campañas tu mismo",
+      "title": "Cierra ventas",
       "description": "Te ayudamos con lo necesario como artes, segmentos y recomendación de inversión."
-    },
-    {
-      "id": 4,
-      "icon": "flaticon-flask",
-      "title": "Da seguimiento",
-      "description": "Podrás dar ver a las personas que te contacten por medio de las campañas en un tablero fácil de usar, donde podrás definir tu proceso de venta paso a paso."
-    },
-    {
-      "id": 5,
-      "icon": "flaticon-flask",
-      "title": "Análisis de gastos claro",
-      "description": "Ve las inversiones de tus campañas y por canal, incluyendo cuánto costó generar un cliente."
     }
   ],
   "Footer_Data": [
@@ -161,52 +149,52 @@
     {
       "id": 1,
       "icon": "flaticon-briefing",
-      "title": "FÁCIL DE USAR",
+      "title": "Intuitiva",
       "description": "En pocos pasos podrás conectar con clientes potenciales para tu negocio."
     },
     {
       "id": 2,
       "icon": "flaticon-trophy",
-      "title": "Ahorro",
+      "title": "Accesible",
       "description": "Nuestra meta es que crezcas, así que cuidaremos tu tiempo y tu dinero."
     },
     {
       "id": 3,
       "icon": "flaticon-atom",
-      "title": "Sin intermediarios",
+      "title": "Integrada",
       "description": "Ni dependencia con agencias. Tu mismo podrás manejar y comprender todo lo que sucede con tus campañas y tus clientes."
     },
     {
       "id": 4,
       "icon": "flaticon-ruler",
-      "title": "Inversión 100% en medios",
+      "title": "Eficiente",
       "description": "Sin fee’s extras, no importa la cantidad que decidas invertir en tus campañas."
     },
     {
       "id": 5,
       "icon": "flaticon-creative",
-      "title": "Automatización",
+      "title": "Transparente",
       "description": "Aprovechamos la tecnología para lo que debemos usarla, hacer nuestra vida más fácil. Así que prepárate para tener marketing y ventas sin preocupaciones."
     },
     {
       "id": 6,
       "icon": "flaticon-conversation",
-      "title": "Seguridad",
+      "title": "Segura ",
       "description": "Tu información y la de tus clientes protegida. Nadie tendrá acceso a la base de datos de clientes que hayas generado, ¡adiós robo de clientes potenciales!"
     }
   ],
   "Timeline": [
     {
       "title": "Crea tu cuenta",
-      "description": "Buscamos conocerte para ayudarte a ir por el camino correcto en tu estrategia de marketing y funnel de ventas."
+      "description": "Queremos conocerte a detalle para que nuestros expertos te ayuden a definir la mejor estrategia para tu negocio."
     },
     {
-      "title": "Arma campañas",
-      "description": "Te apoyamos con stock de imágenes, ejemplos de mensajes atractivos y a visualizar como se verá tu campaña en distintos medios."
+      "title": "Crea tus campañas",
+      "description": "Sin ser experto y en pocos pasos  podrás crear tus campañas de clientes potenciales en medios como Facebook, Instagram o Google."
     },
     {
       "title": "Recibe clientes y vende",
-      "description": "Da seguimiento a todos tus clientes desde que llegan hasta que cierras una venta,  y mantente en contacto con ellos."
+      "description": "Da seguimiento a todos tus clientes desde su registro hasta la venta en un mismo lugar."
     }
   ],
   "Testimonial": [

@@ -4,8 +4,8 @@ const NewsletterWrapper = styled.div`
   position: relative;
   background: linear-gradient(
     -139deg,
-    rgb(255, 65, 108) 0%,
-    rgb(255, 75, 43) 100%
+    rgb(122,207,162) 0%,
+    rgb(81,183,157) 100%
   );
   padding: 44px 80px;
   border-radius: 10px;
@@ -39,26 +39,6 @@ export const ContactFormInputs = styled.div`
 `
 
 export const ContactFormWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  width: 470px;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  @media (max-width: 1220px) {
-    width: 420px;
-  }
-  @media (max-width: 575px) {
-    width: 100%;
-  }
-  @media (max-width: 575px) {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 25px;
-    button {
-      width: 100%;
-    }
-  }
 
   .email_input {
     flex-grow: 1;
@@ -107,5 +87,6 @@ export const ContactFormWrapper = styled.div`
     }
   }
 `;
+
 
 export default NewsletterWrapper;

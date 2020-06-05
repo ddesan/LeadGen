@@ -23,14 +23,6 @@ const BannerSection = ({
         window.location.hash = "news_letter_section"
       }}/>
 
-      <Button
-        className="outlined"
-        title="¡Comienza gratis!"
-        variant="outlined"
-        onClick={() => {window.location.hash = "news_letter_section"}}
-        {...outlineBtnStyle}
-      />
-
     </Fragment>
   );
   return (
@@ -41,13 +33,13 @@ const BannerSection = ({
           <FeatureBlock
             title={
               <Heading
-                content="Consigue clientes. Más rápido. Y vende más fácil."
+                content="Consigue clientes. Más rápido y fácil."
                 {...title}
               />
             }
             description={
               <Text
-                content="La herramienta que necesitas para vender sin ser experto en medios digitales."
+                content="La plataforma que te ayuda a vender en el mundo digital sin ser experto."
                 {...description}
               />
             }

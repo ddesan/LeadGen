@@ -39,7 +39,7 @@ const FeatureSection = ({
         <Box {...sectionHeader}>
           <Text content="PRINCIPALES FUNCIONES" {...sectionSubTitle} />
           <Heading
-            content="Entendemos la complejidad actual en la búsqueda, seguimiento y cierre a ventas de clientes, es por ello que buscamos simplificar el proceso de inicio a fin."
+            content="Entendemos la complejidad en la búsqueda, seguimiento y cierre de ventas, es por ello que buscamos simplificar el proceso de inicio a fin."
             {...sectionTitle}
           />
         </Box>

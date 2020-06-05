@@ -39,7 +39,7 @@ export default () => {
           <ServiceSection />
           <PartnerSection />
           <TimelineSection />
-          <Newsletter />
+          <Newsletter/>
         </ContentWrapper>
       </Fragment>
     </ThemeProvider>

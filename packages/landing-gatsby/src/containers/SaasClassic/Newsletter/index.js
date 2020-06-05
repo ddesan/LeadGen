@@ -21,8 +21,6 @@ function encode(data) {
 const Newsletter = ({
                         sectionWrapper,
                         textArea,
-                        buttonArea,
-                        buttonStyle,
                         title,
                         description,
                     }) => {
@@ -56,28 +54,41 @@ const Newsletter = ({
         setFormState(update)
     }
 
+    const buttonStyle = {
+
+    }
+
     const buttonSuccessState = showSubmitSuccess ?
-        <Button {...buttonStyle} title="¡Listo! ya estas registrado." onClick={handleSubmit}/>:
-        <Button {...buttonStyle} title="Reserva mi lugar" onClick={handleSubmit}/>
+        <Button style={buttonStyle} title="¡Listo! ya estas registrado." onClick={handleSubmit}/>:
+        <Button style={buttonStyle} title="Me interesa" onClick={handleSubmit}/>
 
     const submitButton = submitting ?
-        <FormLoader> <div className="loader-container"><MoonLoader size={30}/></div></FormLoader> :
+        <FormLoader><div className="loader-container"><MoonLoader size={30}/></div></FormLoader> :
         buttonSuccessState
 
     return (
         <Box {...sectionWrapper} as="section" id="news_letter_section">
             <Container>
                 <NewsletterWrapper>
-                    <Box {...textArea}>
+                    <Box flex={"1"} >
                         <Heading content="Reserva tu lugar" {...title} />
                         <Text
-                            content="Registra tu correo y entérate de cuando puedes empezar a usar tu cuenta."
+                            content="Déjanos tus datos y te avisaremos cuando estemos listos para vender contigo. Si te urge déjanos saber y te ayudaremos con gusto"
                             {...description}
                         />
                     </Box>
-                    <Box {...buttonArea}>
+                    <Box>
                         <ContactFormWrapper>
                           <ContactFormInputs>
+                            <Input
+                              className="email_input"
+                              name="name"
+                              inputType="text"
+                              label="Nombre completo"
+                              iconPosition="right"
+                              isMaterial={true}
+                              onChange={(valor) => handleFormChange("name", valor)}
+                            />
                             <Input
                               name="email"
                               inputType="email"
@@ -88,15 +99,7 @@ const Newsletter = ({
                               arial-label="email"
                               onChange={(valor) => handleFormChange("email", valor)}
                             />
-                            <Input
-                              className="email_input"
-                              name="name"
-                              inputType="text"
-                              label="Tu nombre"
-                              iconPosition="right"
-                              isMaterial={true}
-                              onChange={(valor) => handleFormChange("name", valor)}
-                            />
+
                             <Input
                               className="email_input"
                               name="merchant"
@@ -125,11 +128,11 @@ const Newsletter = ({
                               onChange={(valor) => handleFormChange("industry", valor)}
                             />
                           </ContactFormInputs>
-                          <div>
-                            {submitButton}
-                          </div>
                         </ContactFormWrapper>
                     </Box>
+                  <Box>
+                    {submitButton}
+                  </Box>
                 </NewsletterWrapper>
             </Container>
         </Box>

@@ -41,13 +41,13 @@ const VisitorSection = ({
           <FeatureBlock
             title={
               <Heading
-                content="EL TIEMPO ES NUESTRO ALIADO"
+                content="TODOS PUEDEN USAR NUUKTAL"
                 {...title}
               />
             }
             description={
               <Text
-                content="Actualmente el tiempo promedio para generar clientes en medio digitales es de 3 meses. LeadGen lo reduce a 2 semanas."
+                content="Creemos que todos son capaces de manejar la tecnología, por ello creamos una plataforma amigable y fácil de usar"
                 {...description}
               />
             }
