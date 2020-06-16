@@ -222,13 +222,13 @@
       "offset": "70"
     },
     {
-      "label": "Servicio",
+      "label": "Funciones",
       "path": "#service_section",
       "offset": "70"
     },
     {
-      "label": "Funciones",
-      "path": "#feature_section",
+      "label": "Beneficios",
+      "path": "#benefits_section",
       "offset": "70"
     },
     {

@@ -34,7 +34,7 @@ const ServiceSection = ({
   `);
 
   return (
-    <ServiceSectionWrapper id="feat ure_section">
+    <ServiceSectionWrapper id="benefits_section">
       <Container>
         <Box {...sectionHeader}>
           <Text content="BENEFICIOS" {...sectionSubTitle} />
