@@ -1,6 +1,12 @@
 import styled from 'styled-components';
+import Box from "reusecore/src/elements/Box";
 
 const NewsletterWrapper = styled.div`
+  & > div.cta-bottom {
+    @media (min-width: 990px) {
+      display: none;
+    }
+  }
   position: relative;
   background: linear-gradient(
     -139deg,
@@ -22,23 +28,30 @@ const NewsletterWrapper = styled.div`
   }
   @media (max-width: 990px) {
     flex-wrap: wrap;
+    flex-direction: column-reverse;
     justify-content: center;
   }
 `;
 
 export const FormLoader = styled.div`
-    div.loader-container:first-child {
-        width: inherit;
-        height: inherit;
+    
+    & > div.loader-container > div {
+        width: 30px;
+        height: 30px;
     }
 `;
 
 export const ContactFormInputs = styled.div`
   display: flex;
   flex-direction:column;
+  flex: 1 1 300px;
 `
 
 export const ContactFormWrapper = styled.div`
+
+  max-width: 300px;
+  width: 100%;
+  display: flex;
 
   .email_input {
     flex-grow: 1;
@@ -88,5 +101,35 @@ export const ContactFormWrapper = styled.div`
   }
 `;
 
+export const CallToActionSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  & > div.cta-header {
+    max-width: 300px;
+    margin-bottom: 20px;
+   @media (max-width: 990px) {
+      p {  display: none; }
+    }
+  }
+  
+  & > div.cta-button {
+   @media (max-width: 990px) {
+      display: none;
+    }
+  }
+`
+
+export const NewsletterColumn = styled(Box)`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  & > div.cta-button-bottom {
+   @media (min-width: 990px) {
+      display: none;
+    } 
+  }
+`
 
 export default NewsletterWrapper;

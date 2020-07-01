@@ -7,7 +7,13 @@ import Button from 'reusecore/src/elements/Button';
 import Input from 'reusecore/src/elements/Input';
 import Container from 'common/src/components/UI/Container';
 
-import NewsletterWrapper, {ContactFormInputs, ContactFormWrapper, FormLoader} from './newsletter.style';
+import NewsletterWrapper, {
+  ContactFormInputs,
+  ContactFormWrapper,
+  FormLoader,
+  CallToActionSection,
+  NewsletterColumn
+} from './newsletter.style';
 import MailChimp from "../../../services/MailChimp";
 
 import {MoonLoader} from "react-spinners";
@@ -54,30 +60,29 @@ const Newsletter = ({
         setFormState(update)
     }
 
-    const buttonStyle = {
-
-    }
-
     const buttonSuccessState = showSubmitSuccess ?
-        <Button style={buttonStyle} title="¡Listo! ya estas registrado." onClick={handleSubmit}/>:
-        <Button style={buttonStyle} title="Me interesa" onClick={handleSubmit}/>
+        <Button title="¡Listo! ya estas registrado." onClick={handleSubmit}/>:
+        <Button title="Me interesa" onClick={handleSubmit}/>
 
     const submitButton = submitting ?
-        <FormLoader><div className="loader-container"><MoonLoader size={30}/></div></FormLoader> :
+        <FormLoader>
+          <div className="loader-container">
+            <MoonLoader size={30}/>
+          </div>
+        </FormLoader>
+        :
         buttonSuccessState
 
     return (
         <Box {...sectionWrapper} as="section" id="news_letter_section">
             <Container>
                 <NewsletterWrapper>
-                    <Box flex={"1"} >
-                        <Heading content="Reserva tu lugar" {...title} />
-                        <Text
-                            content="Déjanos tus datos y te avisaremos cuando estemos listos para vender contigo. Si te urge déjanos saber y te ayudaremos con gusto"
-                            {...description}
-                        />
-                    </Box>
-                    <Box>
+                  <NewsletterColumn className='cta-bottom'>
+                    <div className="cta-button-bottom">
+                      {submitButton}
+                    </div>
+                  </NewsletterColumn>
+                    <NewsletterColumn>
                         <ContactFormWrapper>
                           <ContactFormInputs>
                             <Input
@@ -129,10 +134,22 @@ const Newsletter = ({
                             />
                           </ContactFormInputs>
                         </ContactFormWrapper>
-                    </Box>
-                  <Box>
-                    {submitButton}
-                  </Box>
+                    </NewsletterColumn>
+                  <NewsletterColumn>
+                    <CallToActionSection>
+                      <div className="cta-header">
+                        <Heading content="Reserva tu lugar" {...title} />
+                        <Text
+                          content="Déjanos tus datos y te avisaremos cuando estemos listos para vender contigo. Si te urge déjanos saber y te ayudaremos con gusto"
+                          {...description}
+                        />
+                      </div>
+                      <div className="cta-button">
+                        {submitButton}
+                      </div>
+                    </CallToActionSection>
+                  </NewsletterColumn>
+
                 </NewsletterWrapper>
             </Container>
         </Box>

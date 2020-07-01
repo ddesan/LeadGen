@@ -29,11 +29,11 @@ const PartnerSection = ({
           <Box {...col} {...textArea}>
             <Heading
               {...title}
-              content="TODOS PUEDEN USAR LEADGEN"
+              content="QUEREMOS QUE TE ENFOQUES EN VENDER"
             />
             <Text
               {...description}
-              content="Dejamos la parte técnica del trabajo a la tecnología, para que tu puedas seguir siendo creativo y continúes creciendo tu negocio."
+              content="Despreocupate de la parte técnica de vender, nosotros nos encargamos de analizar la información y proveerte de las mejores herramientas."
             />
             <Box>
               <a href="#news_letter_section">
