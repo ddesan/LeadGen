@@ -69,7 +69,7 @@ const Newsletter = ({
   }
 
   const buttonSuccessState = showSubmitSuccess ?
-    <Button title="¡Listo! ya estas registrado." onClick={handleSubmit}/> :
+    <Button disabled title="¡Listo! ya estas registrado." onClick={handleSubmit}/> :
     <Button title="Me interesa" onClick={handleSubmit}/>
 
   const submitButton = submitting ?
@@ -90,7 +90,7 @@ const Newsletter = ({
               {submitButton}
             </div>
           </NewsletterColumn>
-          <NewsletterColumn hide={showSubmitSuccess}>
+          <NewsletterColumn >
             <ContactFormWrapper>
               <ContactFormInputs>
                 <Input
@@ -163,7 +163,6 @@ const Newsletter = ({
               </div>
             </CallToActionSection>
           </NewsletterColumn>
-
         </NewsletterWrapper>
       </Container>
     </Box>
