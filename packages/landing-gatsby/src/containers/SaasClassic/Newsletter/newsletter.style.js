@@ -123,12 +123,22 @@ export const CallToActionSection = styled.div`
 
 export const NewsletterColumn = styled(Box)`
   width: 100%;
-  display: flex;
   justify-content: center;
+  display: flex;
+  display: ${p=>p.hide?"none":"flex"};
   & > div.cta-button-bottom {
    @media (min-width: 990px) {
       display: none;
     } 
+  }
+`
+
+export const InputErrors = styled.div`
+  display: ${p=>p.display?"block":"none"};
+  margin: 10px 0;
+  color: #ef1a56;
+  li {
+    margin: 5px 0;
   }
 `
 
