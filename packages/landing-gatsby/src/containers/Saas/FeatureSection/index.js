@@ -37,9 +37,9 @@ const FeatureSection = ({
     <FeatureSectionWrapper id="service_section">
       <Container>
         <Box {...sectionHeader}>
-          <Text content="PRINCIPALES FUNCIONES" {...sectionSubTitle} />
+          <Text content="¿Cómo funciona?" {...sectionSubTitle} />
           <Heading
-            content="Entendemos la complejidad en la búsqueda, seguimiento y cierre de ventas, es por ello que buscamos simplificar el proceso de inicio a fin."
+            content="Entendemos la complejidad en la búsqueda, seguimiento y cierre de ventas, es por ello que buscamos simplificar el proceso de inicio a fin"
             {...sectionTitle}
           />
         </Box>

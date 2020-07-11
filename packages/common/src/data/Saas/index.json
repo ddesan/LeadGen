@@ -31,20 +31,20 @@
     {
       "id": 1,
       "icon": "flaticon-creative",
-      "title": "Crea tus campañas",
-      "description": "Sabemos lo complejo que es buscar, dar seguimiento y cerrar ventas con clientes. Por eso simplificamos el proceso de ventas de inicio a fin."
+      "title": "Crear campañas",
+      "description": "Sin ser experto en marketing digital en Nuuktal puedes crear tus propias campañas en Facebook, Instagram, LinkedIn o Google en pocos clicks"
     },
     {
       "id": 2,
       "icon": "flaticon-briefing",
-      "title": "Genera clientes",
-      "description": "Rápido y sin intermediarios, crea campañas en pocos clics para los principales medios digitales, sin importar tu nivel de conocimiento digital.  (Facebook, Google, Instagram, LinkedIn)"
+      "title": "Generar clientes",
+      "description": "De manera automática vas a poder crear una base de datos de clientes potenciales para tu negocio"
     },
     {
       "id": 3,
       "icon": "flaticon-flask",
-      "title": "Cierra ventas",
-      "description": "Te ayudamos con lo necesario como artes, segmentos y recomendación de inversión."
+      "title": "Concretar ventas",
+      "description": "Mediante herramientas, un funnel comercial y nuestros expertos, podrás cerrar ventas en menos tiempo"
     }
   ],
   "Footer_Data": [

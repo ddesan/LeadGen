@@ -21,7 +21,7 @@ const VisitorSection = ({
   imageWrapper,
   btnStyle,
 }) => {
-  const ImageOne = 'https://static-assets-leadgen-landing.s3.amazonaws.com/el-tiempo-es-nuestro-aliado.jpg';
+  const ImageOne = 'https://static-assets-leadgen-landing.s3.amazonaws.com/login.png';
   return (
     <VisitorSectionWrapper id="visitorSection">
       <SectionObject>

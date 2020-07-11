@@ -37,7 +37,7 @@ const ServiceSection = ({
     <ServiceSectionWrapper id="benefits_section">
       <Container>
         <Box {...sectionHeader}>
-          <Text content="BENEFICIOS" {...sectionSubTitle} />
+          <Text content="¿Por qué Nuuktal?" {...sectionSubTitle} />
           <Heading content="NUUKTAL TU MEJOR ALIADO" {...sectionTitle} />
         </Box>
         <Box className="row" {...row}>

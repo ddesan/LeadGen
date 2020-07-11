@@ -18,7 +18,7 @@ const PartnerSection = ({
   textArea,
   imageArea,
 }) => {
-  const Partner = 'https://static-assets-leadgen-landing.s3.amazonaws.com/todos-pueden.jpg'
+  const Partner = 'https://static-assets-leadgen-landing.s3.amazonaws.com/funnel.png'
   return (
     <PartnerSectionWrapper>
       <Container>
