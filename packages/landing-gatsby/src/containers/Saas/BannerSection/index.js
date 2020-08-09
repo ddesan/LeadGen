@@ -26,7 +26,7 @@ const BannerSection = ({
     </Fragment>
   );
   return (
-    <BannerWrapper id="banner_section">
+    <BannerWrapper id="inicio">
       <Particles/>
       <Container>
         <Box className="row" {...row}>

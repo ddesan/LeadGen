@@ -7,6 +7,7 @@ import Heading from 'reusecore/src/elements/Heading';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
 import ServiceSectionWrapper from './service.style';
+import HuumansMap from "common/src/assets/image/huumans/HuumansMap";
 
 const ServiceSection = ({
   row,
@@ -28,13 +29,14 @@ const ServiceSection = ({
           title
           description
           icon
+          huumans
         }
       }
     }
   `);
 
   return (
-    <ServiceSectionWrapper id="benefits_section">
+    <ServiceSectionWrapper id="beneficios">
       <Container>
         <Box {...sectionHeader}>
           <Text content="¿Por qué Nuuktal?" {...sectionSubTitle} />
@@ -44,7 +46,7 @@ const ServiceSection = ({
           {Data.saasJson.Service.map((feature, index) => (
             <Box className="col" {...col} key={index}>
               <FeatureBlock
-                icon={<i className={feature.icon} />}
+                icon={<img width={"50px"} src={HuumansMap[feature.huumans]} alt=""/>}
                 wrapperStyle={blockWrapperStyle}
                 iconStyle={iconStyle}
                 contentStyle={contentStyle}

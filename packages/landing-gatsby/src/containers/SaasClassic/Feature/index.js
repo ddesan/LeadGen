@@ -34,7 +34,7 @@ const FeatureSection = ({
   `);
 
   return (
-    <SectionWrapper id="feature_section">
+    <SectionWrapper id="funcionalidades">
       <Container>
         <Box {...secTitleWrapper}>
           <Text {...secText} content="PRODUCT COMPARISON" />

@@ -82,7 +82,7 @@ const Newsletter = ({
     buttonSuccessState
 
   return (
-    <Box {...sectionWrapper} as="section" id="news_letter_section">
+    <Box {...sectionWrapper} as="section" id="reserva">
       <Container>
         <NewsletterWrapper>
           <NewsletterColumn className='cta-bottom'>

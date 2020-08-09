@@ -7,6 +7,7 @@ import Heading from 'reusecore/src/elements/Heading';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
 import FeatureSectionWrapper from './featureSection.style';
+import HuumansMap from "common/src/assets/image/huumans/HuumansMap";
 
 const FeatureSection = ({
   row,
@@ -27,14 +28,14 @@ const FeatureSection = ({
           id
           title
           description
-          icon
+          huumans
         }
       }
     }
   `);
 
   return (
-    <FeatureSectionWrapper id="service_section">
+    <FeatureSectionWrapper id="servicios">
       <Container>
         <Box {...sectionHeader}>
           <Text content="¿Cómo funciona?" {...sectionSubTitle} />
@@ -44,10 +45,11 @@ const FeatureSection = ({
           />
         </Box>
         <Box className="row" {...row}>
-          {Data.saasJson.Features.map((feature, index) => (
+          {Data.saasJson.Features.map((feature, index) => {
+            return (
             <Box className="col" {...col} key={index}>
               <FeatureBlock
-                icon={<i className={feature.icon} />}
+                icon={<img width={"50px"} src={HuumansMap[feature.huumans]} alt=""/>}
                 wrapperStyle={blockWrapperStyle}
                 iconStyle={iconStyle}
                 contentStyle={contentStyle}
@@ -58,7 +60,7 @@ const FeatureSection = ({
                 className="saasFeature"
               />
             </Box>
-          ))}
+          )})}
         </Box>
       </Container>
     </FeatureSectionWrapper>
