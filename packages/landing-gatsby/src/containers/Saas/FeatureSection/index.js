@@ -35,7 +35,7 @@ const FeatureSection = ({
   `);
 
   return (
-    <FeatureSectionWrapper id="servicios">
+    <FeatureSectionWrapper id="funciones">
       <Container>
         <Box {...sectionHeader}>
           <Text content="¿Cómo funciona?" {...sectionSubTitle} />
